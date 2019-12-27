@@ -21,13 +21,13 @@
     <script>
         function toDark() {
             if (document.getElementById('wya').getAttribute('xlink:href') == "img/wya.png") {
-                document.body.style.backgroundColor = "#080808";
                 document.getElementById("wya").setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', "img/wya2.png");
                 changeFavicon('img/favicon2.png');
+                document.body.style.backgroundColor = "#080808";
             } else {
-                document.body.style.backgroundColor = "#fff";
                 document.getElementById("wya").setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', "img/wya.png");
                 changeFavicon('img/favicon.png');
+                document.body.style.backgroundColor = "#fff";
             }
         }
 
